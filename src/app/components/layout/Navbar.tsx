@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
+import LanguageSwitcher from "././LanguageSwitcher";
 
 const navigationLinks = [
   {
@@ -31,19 +32,48 @@ export default function Navbar() {
     <>
       {/* Desktop Navigation */}
       <nav
-        className="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex"
+        className="hidden items-center gap-2 text-[18px] font-medium text-slate-700 md:flex"
         aria-label="Main navigation"
       >
         {navigationLinks.map((link) => (
           <a
             key={link.href}
             href={link.href}
-            className="transition-colors duration-200 hover:text-blue-600"
+            className="
+        group relative
+        rounded-xl
+        px-4 py-2.5
+        transition-all duration-300 ease-out
+        hover:-translate-y-0.5
+        hover:bg-blue-50/80
+        hover:text-blue-600
+        focus-visible:outline-2
+        focus-visible:outline-offset-2
+        focus-visible:outline-blue-600
+      "
           >
-            {link.label}
+            {/* Navigation Text */}
+            <span className="relative z-10">{link.label}</span>
+
+            {/* Animated Underline */}
+            <span
+              className="
+          absolute bottom-1.5 left-4 right-4
+          h-[2px]
+          origin-left scale-x-0
+          rounded-full bg-gradient-to-r
+          from-blue-600 to-cyan-400
+          transition-transform duration-300 ease-out
+          group-hover:scale-x-100
+        "
+              aria-hidden="true"
+            />
           </a>
         ))}
       </nav>
+
+      {/* New Language Selector */}
+      <LanguageSwitcher />
 
       {/* Desktop AI Button + Mobile Menu */}
       <div className="flex items-center gap-3">

@@ -24,6 +24,17 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+#about,
+#services,
+#how-it-works {
+  scroll-margin-top: 100px;
+}
+
 /* messageAppear animation */
 @keyframes messageAppear {
   from {
