@@ -1,5 +1,5 @@
 "use client";
-
+import { useLanguage } from "../context/LanguageContext";
 import {
   ArrowRight,
   CheckCircle2,
@@ -11,6 +11,7 @@ import {
 import Reveal from "../components/ui/Reveal";
 
 export default function Hero() {
+  const { language } = useLanguage();
   // Open the existing FinGuide AI chatbot
   const openChat = (suggestion?: string) => {
     window.dispatchEvent(
@@ -26,6 +27,7 @@ export default function Hero() {
       className="relative overflow-hidden bg-gradient-to-br from-[#eff6ff] via-white to-[#e7f4f4]"
     >
       {/* Background glow */}
+      <p>Selected language: {language}</p>
       <div className="pointer-events-none absolute -right-28 top-4 h-[430px] w-[430px] rounded-full bg-blue-200/40 blur-3xl" />
 
       <div className="pointer-events-none absolute -left-32 bottom-0 h-[350px] w-[350px] rounded-full bg-teal-200/40 blur-3xl" />

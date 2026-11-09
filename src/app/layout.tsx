@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import ChatWidget from "./components/chat/ChatWidget";
+import { LanguageProvider } from "./context/LanguageContext";
 
 import "./globals.css";
 
@@ -19,12 +20,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#f8fafc] text-slate-900 antialiased">
-        <Header />
+        <LanguageProvider>
+          <Header />
 
-        {children}
+          {children}
 
-        <Footer />
-        <ChatWidget />
+          <Footer />
+          <ChatWidget />
+        </LanguageProvider>
       </body>
     </html>
   );

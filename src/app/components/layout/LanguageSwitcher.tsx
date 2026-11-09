@@ -3,33 +3,29 @@
 import { useEffect, useRef, useState } from "react";
 import { Check, ChevronDown, Globe2 } from "lucide-react";
 
-const languages = [
+import { useLanguage, type LanguageCode } from "../../context/LanguageContext";
+
+const languages: {
+  code: LanguageCode;
+  name: string;
+  native: string;
+}[] = [
   { code: "en", name: "English", native: "English" },
   { code: "fi", name: "Finnish", native: "Suomi" },
   { code: "sv", name: "Swedish", native: "Svenska" },
   { code: "ne", name: "Nepali", native: "नेपाली" },
-] as const;
-
-type LanguageCode = (typeof languages)[number]["code"];
+];
 
 export default function LanguageSwitcher() {
+  // Dropdown visibility
   const [open, setOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState<LanguageCode>("en");
+
+  // Global language state from LanguageContext
+  const { language: selectedLanguage, changeLanguage } = useLanguage();
 
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const savedLanguage = localStorage.getItem("finguide-language");
-
-    const validLanguage = languages.find(
-      (language) => language.code === savedLanguage,
-    );
-
-    if (validLanguage) {
-      setSelectedLanguage(validLanguage.code);
-    }
-  }, []);
-
+  // Close dropdown when clicking outside or pressing Escape
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (
@@ -55,21 +51,14 @@ export default function LanguageSwitcher() {
     };
   }, []);
 
+  // Find currently selected language
   const currentLanguage =
     languages.find((language) => language.code === selectedLanguage) ??
     languages[0];
 
-  function changeLanguage(code: LanguageCode) {
-    setSelectedLanguage(code);
-
-    localStorage.setItem("finguide-language", code);
-
-    window.dispatchEvent(
-      new CustomEvent("finguide:language-change", {
-        detail: { language: code },
-      }),
-    );
-
+  // Update global language
+  function handleLanguageChange(code: LanguageCode) {
+    changeLanguage(code);
     setOpen(false);
   }
 
@@ -138,7 +127,7 @@ export default function LanguageSwitcher() {
                 <button
                   key={language.code}
                   type="button"
-                  onClick={() => changeLanguage(language.code)}
+                  onClick={() => handleLanguageChange(language.code)}
                   aria-pressed={isSelected}
                   className={`
                     flex w-full items-center justify-between
