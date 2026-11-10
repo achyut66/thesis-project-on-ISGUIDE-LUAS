@@ -1,5 +1,6 @@
 "use client";
 import { useLanguage } from "../context/LanguageContext";
+import { useTranslation } from "../hooks/useTranslation";
 import {
   ArrowRight,
   CheckCircle2,
@@ -20,12 +21,20 @@ export default function Hero() {
       }),
     );
   };
+  const { translatedText: heroTitle, loading } = useTranslation(
+    "Finding your way in Finland, made simpler.",
+  );
 
   return (
     <section
       id="home"
       className="relative overflow-hidden bg-gradient-to-br from-[#eff6ff] via-white to-[#e7f4f4]"
     >
+      <div className="mt-4">
+        <p className="text-lg font-medium text-blue-600">{heroTitle}</p>
+
+        {loading && <p className="text-sm text-slate-500">Translating...</p>}
+      </div>
       {/* Background glow */}
       <p>Selected language: {language}</p>
       <div className="pointer-events-none absolute -right-28 top-4 h-[430px] w-[430px] rounded-full bg-blue-200/40 blur-3xl" />
