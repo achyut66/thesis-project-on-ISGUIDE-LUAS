@@ -10,26 +10,32 @@
   "categories": {
     "immigration": {
       "title": "Immigration & Registration",
+      "label": "Residence & Identity",
       "description": "Find information about residence permits, population registration, and identification in Finland."
     },
     "employment": {
       "title": "Employment & Taxation",
+      "label": "Work & Taxes",
       "description": "Understand employment services, job searching, and taxation in Finland."
     },
     "healthcare": {
       "title": "Healthcare & Social Security",
+      "label": "Health & Benefits",
       "description": "Find information about healthcare services, social security, and available benefits."
     },
     "education": {
       "title": "Education & Integration",
+      "label": "Study & Integration",
       "description": "Explore education opportunities, Finnish language learning, and integration services."
     },
     "housing": {
       "title": "Housing & Everyday Life",
+      "label": "Living in Finland",
       "description": "Find information about accommodation, transportation, and everyday services."
     },
     "general": {
       "title": "General Information",
+      "label": "Getting Started",
       "description": "Find useful information about living in Finland and accessing public services."
     }
   }

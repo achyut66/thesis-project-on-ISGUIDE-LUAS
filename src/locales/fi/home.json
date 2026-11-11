@@ -1,37 +1,102 @@
 {
   "hero": {
-    "badge": "Julkiset palvelut helpommin ymmärrettäviksi",
-    "titleFirst": "Löydä tiesi",
+    "badge": "Julkisten palvelujen ymmärtäminen helpommaksi",
+    "titleFirst": "Löydä tarvitsemasi tiedot",
     "titleSecond": "Suomessa",
-    "titleHighlight": "helpommin.",
-    "description": "Oletko uusi Suomessa? Julkisten palvelujen ymmärtäminen voi tuntua monimutkaiselta. FinGuide auttaa kansainvälisiä asukkaita löytämään selkeää tietoa, tutustumaan hyödyllisiin tietolähteisiin ja esittämään kysymyksiä arkikielellä.",
+    "titleHighlight": "entistä helpommin.",
+    "description": "Oletko uusi Suomessa? Julkisten palvelujen ymmärtäminen voi tuntua monimutkaiselta. FinGuide auttaa kansainvälisiä asukkaita löytämään selkeää tietoa, tutustumaan hyödyllisiin lähteisiin ja esittämään kysymyksiä ymmärrettävällä kielellä.",
     "exploreButton": "Tutustu palveluihin",
-    "askAIButton": "Kysy FinGuide-tekoälyltä"
+    "askAIButton": "Kysy FinGuide-tekoälyltä",
+    "features": "Riippumatonta opastusta • Selkeää kieltä • Virallisia linkkejä",
+    "aiPreview": {
+      "subtitle": "Digitaalinen opastuskumppanisi",
+      "status": "Tekoälyavustaja",
+      "assistantGreeting": "Hei! 👋 Voin auttaa sinua löytämään tietoa Suomen julkisista palveluista.",
+      "userQuestion": "Mistä löydän tietoa osoitteeni rekisteröimisestä?",
+      "assistantResponse": "Hyvä lähtökohta on Digi- ja väestötietovirasto (DVV). Voin auttaa sinua löytämään asiaan liittyvät viralliset ohjeet.",
+      "askPlaceholder": "Esitä oma kysymyksesi..."
+    }
   },
   "about": {
     "badge": "Tietoa FinGuidesta",
-    "title": "Suomen julkisissa palveluissa asiointi helpommaksi",
-    "description": "FinGuide on suunniteltu auttamaan kansainvälisiä asukkaita löytämään tietoa ja ymmärtämään Suomen julkisia palveluja."
+    "title": "Julkisten palvelujen ymmärtämisen pitäisi olla helpompaa.",
+    "description": "Muutto uuteen maahan herättää monia kysymyksiä. Oikean tiedon löytämisen ei pitäisi olla uusi haaste. FinGuide on opiskelijan tutkimusprototyyppi, jossa selvitetään, miten saavutettava tieto ja keskusteleva tekoäly voivat auttaa kansainvälisiä asukkaita käyttämään Suomen julkisia palveluja.",
+    "cards": {
+      "clearInformation": {
+        "title": "Selkeää tietoa",
+        "description": "Ymmärrä vieraita palveluja ja käsitteitä selkeiden selitysten avulla."
+      },
+      "conversationalAssistance": {
+        "title": "Keskusteleva avustaja",
+        "description": "Esitä kysymyksiä luonnollisesti ja saa opastusta tekoälyavustajalta."
+      },
+      "officialResources": {
+        "title": "Viralliset tietolähteet",
+        "description": "Löydä linkkejä Suomen viranomaisiin ja tarkista tärkeät tiedot virallisista lähteistä."
+      }
+    }
   },
   "services": {
     "badge": "Palvelumme",
     "title": "Löydä tarvitsemasi tiedot",
     "description": "Tutustu keskeisiin julkisiin palveluihin ja löydä luotettavaa tietoa arjesta Suomessa.",
-    "immigration": "Maahanmuutto ja rekisteröityminen",
+    "sectionBadge": "Tutustu julkisiin palveluihin",
+    "sectionTitle": "Etkö tiedä, mistä aloittaa?",
+    "sectionDescription": "Tutustu Suomen keskeisiin julkisiin palveluihin kuudessa kategoriassa, jotka auttavat kansainvälisiä asukkaita löytämään tarvitsemansa tiedot.",
+    "guidanceButton": "Pyydä opastusta",
+    "exploreCard": "Tutustu palveluihin",
+    "bottomNote": "FinGuide tarjoaa riippumatonta opastusta ja linkkejä Suomen virallisiin julkisiin palveluihin.",
+    "immigration": "Maahanmuutto ja rekisteröinti",
     "employment": "Työllisyys ja verotus",
     "healthcare": "Terveydenhuolto ja sosiaaliturva",
     "education": "Koulutus ja kotoutuminen",
     "housing": "Asuminen ja arki",
-    "general": "Yleistä tietoa"
+    "general": "Yleistä tietoa",
+    "tags": {
+      "integrationServices": "Kotoutumispalvelut",
+      "municipalServices": "Kuntien palvelut",
+      "housing": "Asuminen",
+      "transport": "Liikenne",
+      "multilingualGuidance": "Monikielinen neuvonta",
+      "checklists": "Muistilistat"
+    }
   },
   "howItWorks": {
-    "badge": "Näin se toimii",
-    "title": "Löydä oikeat tiedot helposti",
-    "description": "Tutustu palveluihin, löydä hyödyllisiä tietolähteitä ja esitä kysymyksiä FinGuiden avulla."
+    "badge": "Suunniteltu yksinkertaiseksi",
+    "title": "Näin FinGuide toimii",
+    "description": "Löydä tarvitsemasi tiedot kolmessa helpossa vaiheessa.",
+    "steps": {
+      "step1": {
+        "title": "Esitä kysymys",
+        "description": "Kirjoita kysymyksesi omin sanoin, vaikka et tuntisi virallista terminologiaa."
+      },
+      "step2": {
+        "title": "Saat selkeän selityksen",
+        "description": "Tekoälyavustaja vastaa keskustellen ja auttaa ymmärtämään vieraita käsitteitä."
+      },
+      "step3": {
+        "title": "Tarkista viralliset ohjeet",
+        "description": "Tarkista vaatimukset linkitettyjen viranomaisten verkkosivuilta ja hoida viralliset asiat niiden ohjeiden mukaisesti."
+      }
+    }
+  },
+  "cards": {
+    "clearInformation": {
+      "title": "Selkeää tietoa",
+      "description": "Ymmärrä vieraita palveluja ja käsitteitä selkeiden selitysten avulla."
+    },
+    "conversationalAssistance": {
+      "title": "Keskusteleva avustaja",
+      "description": "Esitä kysymyksiä luonnollisesti ja saa opastusta tekoälyavustajalta."
+    },
+    "officialResources": {
+      "title": "Viralliset tietolähteet",
+      "description": "Löydä linkkejä Suomen viranomaisiin ja tarkista tärkeät tiedot virallisista lähteistä."
+    }
   },
   "cta": {
-    "title": "Haluatko tutustua Suomen julkisiin palveluihin?",
-    "description": "Aloita tutustuminen kansainvälisille asukkaille suunnattuihin hyödyllisiin tietoihin ja tietolähteisiin.",
-    "button": "Tutustu palveluihin"
+    "title": "Onko sinulla kysyttävää? Aloita keskustelu.",
+    "description": "Arjen kysymyksistä oikean viranomaisen löytämiseen – FinGuide auttaa sinua ottamaan seuraavan askeleen.",
+    "button": "Keskustele FinGuiden kanssa"
   }
 }

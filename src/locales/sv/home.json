@@ -1,37 +1,102 @@
 {
   "hero": {
     "badge": "Vi gör offentliga tjänster lättare att förstå",
-    "titleFirst": "Hitta rätt i",
-    "titleSecond": "Finland,",
+    "titleFirst": "Hitta rätt information",
+    "titleSecond": "i Finland,",
     "titleHighlight": "på ett enklare sätt.",
-    "description": "Ny i Finland? Det kan kännas komplicerat att förstå offentliga tjänster. FinGuide hjälper internationella invånare att hitta tydlig information, utforska användbara resurser och ställa frågor på ett enkelt språk.",
+    "description": "Är du ny i Finland? Det kan kännas komplicerat att förstå offentliga tjänster. FinGuide hjälper internationella invånare att hitta tydlig information, utforska användbara resurser och ställa frågor på ett lättförståeligt språk.",
     "exploreButton": "Utforska tjänster",
-    "askAIButton": "Fråga FinGuide AI"
+    "askAIButton": "Fråga FinGuide AI",
+    "features": "Oberoende vägledning • Enkelt språk • Officiella länkar",
+    "aiPreview": {
+      "subtitle": "Din digitala vägledare",
+      "status": "AI-assistent",
+      "assistantGreeting": "Hej! 👋 Jag kan hjälpa dig att hitta information om offentliga tjänster i Finland.",
+      "userQuestion": "Var hittar jag information om hur jag registrerar min adress?",
+      "assistantResponse": "En bra utgångspunkt är Myndigheten för digitalisering och befolkningsdata (DVV). Jag kan hjälpa dig att hitta relevant officiell vägledning.",
+      "askPlaceholder": "Ställ din egen fråga..."
+    }
   },
   "about": {
     "badge": "Om FinGuide",
-    "title": "Vi gör det enklare att hitta rätt bland Finlands offentliga tjänster",
-    "description": "FinGuide är utformat för att hjälpa internationella invånare att hitta information och förstå offentliga tjänster i Finland."
+    "title": "Offentliga tjänster borde vara lättare att förstå.",
+    "description": "Att flytta till ett nytt land väcker många frågor. Att hitta rätt information borde inte vara ytterligare en utmaning. FinGuide är en forskningsprototyp inom ett studentprojekt som undersöker hur tillgänglig information och samtalsbaserad AI kan hjälpa internationella invånare att navigera bland offentliga tjänster i Finland.",
+    "cards": {
+      "clearInformation": {
+        "title": "Tydlig information",
+        "description": "Förstå obekanta tjänster och begrepp genom enkla förklaringar."
+      },
+      "conversationalAssistance": {
+        "title": "Samtalsbaserad assistans",
+        "description": "Ställ frågor på ett naturligt sätt och få vägledning genom en AI-driven assistent."
+      },
+      "officialResources": {
+        "title": "Officiella informationskällor",
+        "description": "Hitta länkar till relevanta finländska myndigheter och kontrollera viktig information."
+      }
+    }
   },
   "services": {
     "badge": "Våra tjänster",
     "title": "Hitta informationen du behöver",
-    "description": "Utforska viktiga offentliga tjänster och hitta tillförlitlig information om vardagen i Finland.",
+    "description": "Utforska viktiga offentliga tjänster och hitta tillförlitlig information för vardagslivet i Finland.",
+    "sectionBadge": "Utforska offentliga tjänster",
+    "sectionTitle": "Osäker på var du ska börja?",
+    "sectionDescription": "Utforska viktiga offentliga tjänster i Finland, indelade i sex kategorier som hjälper internationella invånare att hitta den information de behöver.",
+    "guidanceButton": "Få vägledning",
+    "exploreCard": "Utforska tjänster",
+    "bottomNote": "FinGuide erbjuder oberoende vägledning och länkar till officiella offentliga tjänster i Finland.",
     "immigration": "Invandring och registrering",
-    "employment": "Arbete och beskattning",
+    "employment": "Sysselsättning och beskattning",
     "healthcare": "Hälso- och sjukvård samt social trygghet",
     "education": "Utbildning och integration",
     "housing": "Boende och vardagsliv",
-    "general": "Allmän information"
+    "general": "Allmän information",
+    "tags": {
+      "integrationServices": "Integrationstjänster",
+      "municipalServices": "Kommunala tjänster",
+      "housing": "Boende",
+      "transport": "Transport",
+      "multilingualGuidance": "Flerspråkig vägledning",
+      "checklists": "Checklistor"
+    }
   },
   "howItWorks": {
-    "badge": "Så fungerar det",
-    "title": "Enkla steg för att hitta rätt information",
-    "description": "Utforska tjänster, upptäck användbara resurser och ställ frågor med hjälp av FinGuide."
+    "badge": "Enkelhet i fokus",
+    "title": "Så fungerar FinGuide",
+    "description": "Hitta informationen du behöver i tre enkla steg.",
+    "steps": {
+      "step1": {
+        "title": "Ställ en fråga",
+        "description": "Skriv din fråga med egna ord, även om du inte känner till den officiella terminologin."
+      },
+      "step2": {
+        "title": "Få en tydlig förklaring",
+        "description": "AI-assistenten svarar i samtalsform och kan hjälpa dig att förstå obekanta begrepp."
+      },
+      "step3": {
+        "title": "Kontrollera officiella anvisningar",
+        "description": "Använd länkarna till myndigheterna för att kontrollera kraven och genomföra officiella ärenden."
+      }
+    }
+  },
+  "cards": {
+    "clearInformation": {
+      "title": "Tydlig information",
+      "description": "Förstå obekanta tjänster och begrepp genom enkla förklaringar."
+    },
+    "conversationalAssistance": {
+      "title": "Samtalsbaserad assistans",
+      "description": "Ställ frågor på ett naturligt sätt och få vägledning genom en AI-driven assistent."
+    },
+    "officialResources": {
+      "title": "Officiella informationskällor",
+      "description": "Hitta länkar till relevanta finländska myndigheter och kontrollera viktig information."
+    }
   },
   "cta": {
-    "title": "Redo att utforska offentliga tjänster i Finland?",
-    "description": "Börja utforska användbar information och resurser för internationella invånare.",
-    "button": "Utforska tjänster"
+    "title": "Har du en fråga? Starta en konversation.",
+    "description": "Från vardagliga frågor till att hitta rätt myndighet – FinGuide hjälper dig att ta nästa steg.",
+    "button": "Chatta med FinGuide"
   }
 }

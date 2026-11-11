@@ -9,27 +9,33 @@
   },
   "categories": {
     "immigration": {
-      "title": "Maahanmuutto ja rekisteröityminen",
-      "description": "Löydä tietoa oleskeluluvista, väestötietojen rekisteröinnistä ja henkilöllisyyden todentamisesta Suomessa."
+      "title": "Maahanmuutto ja rekisteröinti",
+      "label": "Oleskelu ja henkilöllisyys",
+      "description": "Löydä tietoa oleskeluluvista, väestötietojärjestelmään rekisteröitymisestä ja henkilöllisyyden todentamisesta Suomessa."
     },
     "employment": {
       "title": "Työllisyys ja verotus",
+      "label": "Työ ja verotus",
       "description": "Tutustu työllisyyspalveluihin, työnhakuun ja verotukseen Suomessa."
     },
     "healthcare": {
       "title": "Terveydenhuolto ja sosiaaliturva",
-      "description": "Löydä tietoa terveyspalveluista, sosiaaliturvasta ja mahdollisista etuuksista."
+      "label": "Terveys ja etuudet",
+      "description": "Löydä tietoa terveydenhuollon palveluista, sosiaaliturvasta ja saatavilla olevista etuuksista."
     },
     "education": {
       "title": "Koulutus ja kotoutuminen",
+      "label": "Opiskelu ja kotoutuminen",
       "description": "Tutustu koulutusmahdollisuuksiin, suomen kielen opiskeluun ja kotoutumispalveluihin."
     },
     "housing": {
       "title": "Asuminen ja arki",
-      "description": "Löydä tietoa asumisesta, liikkumisesta ja arjen palveluista."
+      "label": "Asuminen Suomessa",
+      "description": "Löydä tietoa asumisesta, liikenteestä ja arjen palveluista."
     },
     "general": {
       "title": "Yleistä tietoa",
+      "label": "Alkuun pääseminen",
       "description": "Löydä hyödyllistä tietoa Suomessa asumisesta ja julkisten palvelujen käyttämisestä."
     }
   }
