@@ -1,0 +1,33 @@
+{
+  "brand": {
+    "name": "FinGuide",
+    "status": "BETA"
+  },
+  "navigation": {
+    "about": "About",
+    "services": "Services",
+    "howItWorks": "How it works",
+    "askAI": "Ask AI"
+  },
+  "buttons": {
+    "learnMore": "Learn More",
+    "exploreServices": "Explore Services",
+    "visitWebsite": "Visit Official Website",
+    "askAI": "Ask FinGuide AI",
+    "getStarted": "Get Started",
+    "backHome": "Back to Home"
+  },
+  "language": {
+    "select": "Select Language",
+    "english": "English",
+    "finnish": "Finnish",
+    "swedish": "Swedish",
+    "nepali": "Nepali"
+  },
+  "footer": {
+    "description": "Helping international residents understand public services in Finland.",
+    "quickLinks": "Quick Links",
+    "resources": "Resources",
+    "copyright": "All rights reserved."
+  }
+}

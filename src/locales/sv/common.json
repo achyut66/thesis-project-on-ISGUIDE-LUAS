@@ -1,0 +1,33 @@
+{
+  "brand": {
+    "name": "FinGuide",
+    "status": "BETA"
+  },
+  "navigation": {
+    "about": "Om oss",
+    "services": "Tjänster",
+    "howItWorks": "Så fungerar det",
+    "askAI": "Fråga AI"
+  },
+  "buttons": {
+    "learnMore": "Läs mer",
+    "exploreServices": "Utforska tjänster",
+    "visitWebsite": "Besök den officiella webbplatsen",
+    "askAI": "Fråga FinGuide AI",
+    "getStarted": "Kom igång",
+    "backHome": "Tillbaka till startsidan"
+  },
+  "language": {
+    "select": "Välj språk",
+    "english": "Engelska",
+    "finnish": "Finska",
+    "swedish": "Svenska",
+    "nepali": "Nepali"
+  },
+  "footer": {
+    "description": "Vi hjälper internationella invånare att förstå offentliga tjänster i Finland.",
+    "quickLinks": "Snabblänkar",
+    "resources": "Informationskällor",
+    "copyright": "Alla rättigheter förbehållna."
+  }
+}

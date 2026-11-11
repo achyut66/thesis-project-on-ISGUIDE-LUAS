@@ -1,4 +1,5 @@
 "use client";
+import { translate } from "../../lib/translate";
 
 import {
   createContext,
@@ -20,6 +21,7 @@ export type LanguageCode = keyof typeof supportedLanguages;
 type LanguageContextType = {
   language: LanguageCode;
   changeLanguage: (language: LanguageCode) => void;
+  t: (key: string) => string;
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(
@@ -32,6 +34,7 @@ function isLanguageCode(value: string | null): value is LanguageCode {
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<LanguageCode>("en");
+  const t = (key: string) => translate(language, key);
 
   useEffect(() => {
     const savedLanguage = localStorage.getItem("finguide-language");
@@ -54,7 +57,13 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   };
 
   return (
-    <LanguageContext.Provider value={{ language, changeLanguage }}>
+    <LanguageContext.Provider
+      value={{
+        language,
+        changeLanguage,
+        t,
+      }}
+    >
       {children}
     </LanguageContext.Provider>
   );

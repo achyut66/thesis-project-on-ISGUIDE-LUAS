@@ -1,0 +1,36 @@
+{
+  "common": {
+    "officialResources": "Officiella informationskällor",
+    "whoToContact": "Vem ska jag kontakta?",
+    "frequentlyAskedQuestions": "Vanliga frågor",
+    "visitWebsite": "Besök den officiella webbplatsen",
+    "askAI": "Fråga FinGuide AI",
+    "importantNotice": "Viktigt meddelande"
+  },
+  "categories": {
+    "immigration": {
+      "title": "Invandring och registrering",
+      "description": "Hitta information om uppehållstillstånd, folkbokföring och identifiering i Finland."
+    },
+    "employment": {
+      "title": "Arbete och beskattning",
+      "description": "Lär dig mer om sysselsättningstjänster, jobbsökning och beskattning i Finland."
+    },
+    "healthcare": {
+      "title": "Hälso- och sjukvård samt social trygghet",
+      "description": "Hitta information om hälso- och sjukvård, social trygghet och tillgängliga förmåner."
+    },
+    "education": {
+      "title": "Utbildning och integration",
+      "description": "Utforska utbildningsmöjligheter, studier i finska och integrationstjänster."
+    },
+    "housing": {
+      "title": "Boende och vardagsliv",
+      "description": "Hitta information om boende, transporter och tjänster i vardagen."
+    },
+    "general": {
+      "title": "Allmän information",
+      "description": "Hitta användbar information om livet i Finland och hur du använder offentliga tjänster."
+    }
+  }
+}

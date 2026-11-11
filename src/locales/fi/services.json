@@ -1,0 +1,36 @@
+{
+  "common": {
+    "officialResources": "Viralliset tietolähteet",
+    "whoToContact": "Mihin ottaa yhteyttä",
+    "frequentlyAskedQuestions": "Usein kysytyt kysymykset",
+    "visitWebsite": "Siirry viralliselle verkkosivustolle",
+    "askAI": "Kysy FinGuide-tekoälyltä",
+    "importantNotice": "Tärkeä huomautus"
+  },
+  "categories": {
+    "immigration": {
+      "title": "Maahanmuutto ja rekisteröityminen",
+      "description": "Löydä tietoa oleskeluluvista, väestötietojen rekisteröinnistä ja henkilöllisyyden todentamisesta Suomessa."
+    },
+    "employment": {
+      "title": "Työllisyys ja verotus",
+      "description": "Tutustu työllisyyspalveluihin, työnhakuun ja verotukseen Suomessa."
+    },
+    "healthcare": {
+      "title": "Terveydenhuolto ja sosiaaliturva",
+      "description": "Löydä tietoa terveyspalveluista, sosiaaliturvasta ja mahdollisista etuuksista."
+    },
+    "education": {
+      "title": "Koulutus ja kotoutuminen",
+      "description": "Tutustu koulutusmahdollisuuksiin, suomen kielen opiskeluun ja kotoutumispalveluihin."
+    },
+    "housing": {
+      "title": "Asuminen ja arki",
+      "description": "Löydä tietoa asumisesta, liikkumisesta ja arjen palveluista."
+    },
+    "general": {
+      "title": "Yleistä tietoa",
+      "description": "Löydä hyödyllistä tietoa Suomessa asumisesta ja julkisten palvelujen käyttämisestä."
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "badge": "Making public services easier to understand",
+    "titleFirst": "Finding your way in",
+    "titleSecond": "Finland,",
+    "titleHighlight": "made simpler.",
+    "description": "New to Finland? Understanding public services can feel complicated. FinGuide helps international residents find clear information, explore useful resources, and ask questions in everyday language.",
+    "exploreButton": "Explore Services",
+    "askAIButton": "Ask FinGuide AI"
+  },
+  "about": {
+    "badge": "About FinGuide",
+    "title": "Making Finnish public services easier to navigate",
+    "description": "FinGuide is designed to help international residents find information and understand public services in Finland."
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "Find the information you need",
+    "description": "Explore essential public services and find reliable information for everyday life in Finland.",
+    "immigration": "Immigration & Registration",
+    "employment": "Employment & Taxation",
+    "healthcare": "Healthcare & Social Security",
+    "education": "Education & Integration",
+    "housing": "Housing & Everyday Life",
+    "general": "General Information"
+  },
+  "howItWorks": {
+    "badge": "How It Works",
+    "title": "Simple steps to find the right information",
+    "description": "Explore services, discover useful resources, and ask questions using FinGuide."
+  },
+  "cta": {
+    "title": "Ready to explore Finnish public services?",
+    "description": "Start exploring useful information and resources designed for international residents.",
+    "button": "Explore Services"
+  }
+}

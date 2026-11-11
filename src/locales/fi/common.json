@@ -1,0 +1,33 @@
+{
+  "brand": {
+    "name": "FinGuide",
+    "status": "BETA"
+  },
+  "navigation": {
+    "about": "Tietoa palvelusta",
+    "services": "Palvelut",
+    "howItWorks": "Näin se toimii",
+    "askAI": "Kysy tekoälyltä"
+  },
+  "buttons": {
+    "learnMore": "Lue lisää",
+    "exploreServices": "Tutustu palveluihin",
+    "visitWebsite": "Siirry viralliselle verkkosivustolle",
+    "askAI": "Kysy FinGuide-tekoälyltä",
+    "getStarted": "Aloita",
+    "backHome": "Takaisin etusivulle"
+  },
+  "language": {
+    "select": "Valitse kieli",
+    "english": "Englanti",
+    "finnish": "Suomi",
+    "swedish": "Ruotsi",
+    "nepali": "Nepali"
+  },
+  "footer": {
+    "description": "Autamme kansainvälisiä asukkaita ymmärtämään Suomen julkisia palveluja.",
+    "quickLinks": "Pikalinkit",
+    "resources": "Tietolähteet",
+    "copyright": "Kaikki oikeudet pidätetään."
+  }
+}

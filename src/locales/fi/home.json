@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "badge": "Julkiset palvelut helpommin ymmärrettäviksi",
+    "titleFirst": "Löydä tiesi",
+    "titleSecond": "Suomessa",
+    "titleHighlight": "helpommin.",
+    "description": "Oletko uusi Suomessa? Julkisten palvelujen ymmärtäminen voi tuntua monimutkaiselta. FinGuide auttaa kansainvälisiä asukkaita löytämään selkeää tietoa, tutustumaan hyödyllisiin tietolähteisiin ja esittämään kysymyksiä arkikielellä.",
+    "exploreButton": "Tutustu palveluihin",
+    "askAIButton": "Kysy FinGuide-tekoälyltä"
+  },
+  "about": {
+    "badge": "Tietoa FinGuidesta",
+    "title": "Suomen julkisissa palveluissa asiointi helpommaksi",
+    "description": "FinGuide on suunniteltu auttamaan kansainvälisiä asukkaita löytämään tietoa ja ymmärtämään Suomen julkisia palveluja."
+  },
+  "services": {
+    "badge": "Palvelumme",
+    "title": "Löydä tarvitsemasi tiedot",
+    "description": "Tutustu keskeisiin julkisiin palveluihin ja löydä luotettavaa tietoa arjesta Suomessa.",
+    "immigration": "Maahanmuutto ja rekisteröityminen",
+    "employment": "Työllisyys ja verotus",
+    "healthcare": "Terveydenhuolto ja sosiaaliturva",
+    "education": "Koulutus ja kotoutuminen",
+    "housing": "Asuminen ja arki",
+    "general": "Yleistä tietoa"
+  },
+  "howItWorks": {
+    "badge": "Näin se toimii",
+    "title": "Löydä oikeat tiedot helposti",
+    "description": "Tutustu palveluihin, löydä hyödyllisiä tietolähteitä ja esitä kysymyksiä FinGuiden avulla."
+  },
+  "cta": {
+    "title": "Haluatko tutustua Suomen julkisiin palveluihin?",
+    "description": "Aloita tutustuminen kansainvälisille asukkaille suunnattuihin hyödyllisiin tietoihin ja tietolähteisiin.",
+    "button": "Tutustu palveluihin"
+  }
+}

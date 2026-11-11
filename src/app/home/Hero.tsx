@@ -21,22 +21,13 @@ export default function Hero() {
       }),
     );
   };
-  const { translatedText: heroTitle, loading } = useTranslation(
-    "Finding your way in Finland, made simpler.",
-  );
 
   return (
     <section
       id="home"
       className="relative overflow-hidden bg-gradient-to-br from-[#eff6ff] via-white to-[#e7f4f4]"
     >
-      <div className="mt-4">
-        <p className="text-lg font-medium text-blue-600">{heroTitle}</p>
-
-        {loading && <p className="text-sm text-slate-500">Translating...</p>}
-      </div>
       {/* Background glow */}
-      <p>Selected language: {language}</p>
       <div className="pointer-events-none absolute -right-28 top-4 h-[430px] w-[430px] rounded-full bg-blue-200/40 blur-3xl" />
 
       <div className="pointer-events-none absolute -left-32 bottom-0 h-[350px] w-[350px] rounded-full bg-teal-200/40 blur-3xl" />

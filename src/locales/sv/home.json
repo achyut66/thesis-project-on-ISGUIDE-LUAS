@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "badge": "Vi gör offentliga tjänster lättare att förstå",
+    "titleFirst": "Hitta rätt i",
+    "titleSecond": "Finland,",
+    "titleHighlight": "på ett enklare sätt.",
+    "description": "Ny i Finland? Det kan kännas komplicerat att förstå offentliga tjänster. FinGuide hjälper internationella invånare att hitta tydlig information, utforska användbara resurser och ställa frågor på ett enkelt språk.",
+    "exploreButton": "Utforska tjänster",
+    "askAIButton": "Fråga FinGuide AI"
+  },
+  "about": {
+    "badge": "Om FinGuide",
+    "title": "Vi gör det enklare att hitta rätt bland Finlands offentliga tjänster",
+    "description": "FinGuide är utformat för att hjälpa internationella invånare att hitta information och förstå offentliga tjänster i Finland."
+  },
+  "services": {
+    "badge": "Våra tjänster",
+    "title": "Hitta informationen du behöver",
+    "description": "Utforska viktiga offentliga tjänster och hitta tillförlitlig information om vardagen i Finland.",
+    "immigration": "Invandring och registrering",
+    "employment": "Arbete och beskattning",
+    "healthcare": "Hälso- och sjukvård samt social trygghet",
+    "education": "Utbildning och integration",
+    "housing": "Boende och vardagsliv",
+    "general": "Allmän information"
+  },
+  "howItWorks": {
+    "badge": "Så fungerar det",
+    "title": "Enkla steg för att hitta rätt information",
+    "description": "Utforska tjänster, upptäck användbara resurser och ställ frågor med hjälp av FinGuide."
+  },
+  "cta": {
+    "title": "Redo att utforska offentliga tjänster i Finland?",
+    "description": "Börja utforska användbar information och resurser för internationella invånare.",
+    "button": "Utforska tjänster"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "common": {
+    "officialResources": "Official Resources",
+    "whoToContact": "Who to Contact",
+    "frequentlyAskedQuestions": "Frequently Asked Questions",
+    "visitWebsite": "Visit Official Website",
+    "askAI": "Ask FinGuide AI",
+    "importantNotice": "Important Notice"
+  },
+  "categories": {
+    "immigration": {
+      "title": "Immigration & Registration",
+      "description": "Find information about residence permits, population registration, and identification in Finland."
+    },
+    "employment": {
+      "title": "Employment & Taxation",
+      "description": "Understand employment services, job searching, and taxation in Finland."
+    },
+    "healthcare": {
+      "title": "Healthcare & Social Security",
+      "description": "Find information about healthcare services, social security, and available benefits."
+    },
+    "education": {
+      "title": "Education & Integration",
+      "description": "Explore education opportunities, Finnish language learning, and integration services."
+    },
+    "housing": {
+      "title": "Housing & Everyday Life",
+      "description": "Find information about accommodation, transportation, and everyday services."
+    },
+    "general": {
+      "title": "General Information",
+      "description": "Find useful information about living in Finland and accessing public services."
+    }
+  }
+}

@@ -3,28 +3,56 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 
-const translationCache = new Map<string, string>();
+// Change this whenever you update the translation prompt or model.
+const CACHE_VERSION = "v1";
 
 type TranslationResult = {
   key: string;
   value: string;
 };
 
+function getCachedTranslation(key: string): string | null {
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function saveTranslation(key: string, value: string) {
+  try {
+    localStorage.setItem(key, value);
+  } catch (error) {
+    console.warn("Unable to cache translation:", error);
+  }
+}
+
 export function useTranslation(text: string) {
   const { language } = useLanguage();
 
-  const cacheKey = `${language}:${text}`;
+  const cacheKey = `finguide:${CACHE_VERSION}:${language}:${text}`;
 
   const [result, setResult] = useState<TranslationResult | null>(null);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    if (language === "en" || translationCache.has(cacheKey)) {
+    if (language === "en" || !text.trim()) {
+      return;
+    }
+
+    const cached = getCachedTranslation(cacheKey);
+
+    if (cached !== null) {
+      setResult({ key: cacheKey, value: cached });
+      setLoading(false);
       return;
     }
 
     const controller = new AbortController();
 
     async function translate() {
+      setLoading(true);
+
       try {
         const response = await fetch("/api/translate", {
           method: "POST",
@@ -39,16 +67,19 @@ export function useTranslation(text: string) {
         });
 
         if (!response.ok) {
-          throw new Error("Translation failed");
+          throw new Error(`Translation failed: ${response.status}`);
         }
 
         const data = await response.json();
 
-        if (typeof data.translatedText !== "string") {
+        if (
+          typeof data.translatedText !== "string" ||
+          !data.translatedText.trim()
+        ) {
           throw new Error("Invalid translation response");
         }
 
-        translationCache.set(cacheKey, data.translatedText);
+        saveTranslation(cacheKey, data.translatedText);
 
         if (!controller.signal.aborted) {
           setResult({
@@ -58,7 +89,11 @@ export function useTranslation(text: string) {
         }
       } catch (error) {
         if (!controller.signal.aborted) {
-          console.error("Translation error:", error);
+          console.error("FinGuide translation error:", error);
+        }
+      } finally {
+        if (!controller.signal.aborted) {
+          setLoading(false);
         }
       }
     }
@@ -66,17 +101,10 @@ export function useTranslation(text: string) {
     translate();
 
     return () => controller.abort();
-  }, [text, language, cacheKey]);
-
-  const cachedTranslation = translationCache.get(cacheKey);
+  }, [cacheKey, language, text]);
 
   const translatedText =
-    language === "en"
-      ? text
-      : (cachedTranslation ?? (result?.key === cacheKey ? result.value : text));
-
-  const loading =
-    language !== "en" && !cachedTranslation && result?.key !== cacheKey;
+    language === "en" ? text : result?.key === cacheKey ? result.value : text;
 
   return {
     translatedText,
