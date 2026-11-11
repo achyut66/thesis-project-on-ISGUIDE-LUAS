@@ -7,6 +7,100 @@
     "askAI": "Fråga FinGuide AI",
     "importantNotice": "Viktigt meddelande"
   },
+  "immigrations": {
+    "hero": {
+      "back": "Tillbaka till tjänsterna",
+      "badge": "Offentliga tjänster i Finland",
+      "titleFirst": "Invandring och",
+      "titleHighlight": "registrering",
+      "description1": "Att flytta till Finland innebär flera viktiga steg, från att ansöka om uppehållstillstånd till att registrera sina personuppgifter och använda digitala offentliga tjänster.",
+      "description2": "FinGuide samlar viktig information om de finländska myndigheter som ansvarar för invandring, registrering, identitetshandlingar och digitala myndighetstjänster.",
+      "serviceCount": "4 viktiga tjänster",
+      "officialResources": "Officiella informationskällor"
+    },
+    "serviceSection": {
+      "badge": "Utforska tjänster",
+      "title": "Viktiga tjänster för invandring och registrering",
+      "description": "Varje myndighet har olika ansvarsområden. Utforska tjänsterna nedan för att förstå vilken organisation som kan hjälpa dig i din situation."
+    },
+    "serviceCards": {
+      "migri": {
+        "category": "Invandring",
+        "description": "Migrationsverket (Migri) behandlar uppehållstillstånd, ansökningar om förlängning av uppehållstillstånd, medborgarskapsansökningar och andra invandringsrelaterade ärenden.",
+        "question": "Hur kan jag ansöka om eller förlänga mitt uppehållstillstånd i Finland?"
+      },
+      "dvv": {
+        "category": "Befolkningsregistrering",
+        "description": "Myndigheten för digitalisering och befolkningsdata (DVV) ansvarar för befolkningsuppgifter, registrering av hemkommun och personuppgifter.",
+        "question": "Hur registrerar jag min adress och hemkommun i Finland?"
+      },
+      "suomi": {
+        "category": "Digitala offentliga tjänster",
+        "description": "Suomi.fi hjälper invånare att hitta offentliga tjänster, använda elektronisk identifiering och hantera fullmakter för ärenden hos finländska myndigheter.",
+        "question": "Vad är Suomi.fi och hur kan jag använda dess digitala tjänster?"
+      },
+      "police": {
+        "category": "Identitetshandlingar och tillstånd",
+        "description": "Polisen i Finland erbjuder tjänster som gäller identitetskort, pass och vissa andra tillstånd. Behörighet och nödvändiga handlingar beror på din situation.",
+        "question": "Hur kan en utländsk invånare ansöka om ett finländskt identitetskort?"
+      }
+    },
+    "responsibilities": {
+      "badge": "Hitta rätt myndighet",
+      "title": "Vem ska du kontakta?",
+      "description": "Olika myndigheter ansvarar för olika ärenden som gäller registrering och invandring. Här är en kort översikt.",
+      "items": {
+        "migri": {
+          "title": "Uppehållstillstånd och invandring",
+          "description": "Ansökningar, förlängningar och beslut i invandringsärenden."
+        },
+        "dvv": {
+          "title": "Befolknings- och adressregistrering",
+          "description": "Befolkningsuppgifter, personuppgifter och hemkommun."
+        },
+        "suomi": {
+          "title": "Digitala myndighetstjänster",
+          "description": "Att hitta offentliga tjänster, elektronisk identifiering och fullmakter."
+        },
+        "police": {
+          "title": "Identitetskort och polistillstånd",
+          "description": "Ansökningar om identitetskort och andra tillstånd som hanteras av polisen."
+        }
+      }
+    },
+    "faq": {
+      "badge": "Vanliga frågor",
+      "title": "Vanliga frågor och svar",
+      "description": "Hitta svar på vanliga frågor om invandring och registrering i Finland.",
+      "items": {
+        "q1": {
+          "question": "Hur ansöker jag om uppehållstillstånd i Finland?",
+          "answer": "Ansökningar om uppehållstillstånd behandlas vanligtvis av Migrationsverket (Migri). På Migris officiella webbplats hittar du information om olika tillståndstyper, krav och ansökningsförfaranden."
+        },
+        "q2": {
+          "question": "Vad är en finländsk personbeteckning?",
+          "answer": "En finländsk personbeteckning är en unik identifierare som används i Finlands befolkningsdatasystem. Den behövs ofta vid kontakter med myndigheter och för att använda olika tjänster."
+        },
+        "q3": {
+          "question": "Hur registrerar jag min adress i Finland?",
+          "answer": "Hur adressregistreringen går till beror på din situation. Du hittar anvisningar hos DVV och via den officiella flyttanmälningstjänsten. Att registrera en adress och att få en hemkommun är närliggande men olika frågor."
+        },
+        "q4": {
+          "question": "Vad är Suomi.fi?",
+          "answer": "Suomi.fi är en finländsk plattform för offentliga tjänster som ger information om myndighetstjänster och stöder elektronisk identifiering och fullmakter."
+        },
+        "q5": {
+          "question": "Kan internationella invånare ansöka om ett finländskt identitetskort?",
+          "answer": "Vissa utländska medborgare som bor i Finland kan ha rätt att få ett identitetskort utfärdat av polisen. Behörigheten beror på särskilda villkor, så kontrollera polisens officiella anvisningar."
+        }
+      }
+    },
+    "notice": {
+      "title": "Viktig information",
+      "description1": "FinGuide är en självständig forskningsprototyp inom ett studentprojekt och har ingen officiell koppling till finländska myndigheter. Informationen tillhandahålls endast som allmän vägledning.",
+      "description2": "Kontrollera alltid officiella krav, behörighetsvillkor och ansökningsförfaranden direkt hos den berörda finländska myndigheten."
+    }
+  },
   "categories": {
     "immigration": {
       "title": "Invandring och registrering",
@@ -33,6 +127,7 @@
       "label": "Att bo i Finland",
       "description": "Hitta information om boende, transport och tjänster i vardagen."
     },
+
     "general": {
       "title": "Allmän information",
       "label": "Kom igång",

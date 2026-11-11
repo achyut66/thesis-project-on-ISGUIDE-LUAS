@@ -25,9 +25,8 @@
     "nepali": "Nepali"
   },
   "footer": {
-    "description": "Helping international residents understand public services in Finland.",
-    "quickLinks": "Quick Links",
-    "resources": "Resources",
-    "copyright": "All rights reserved."
+    "subtitle": "An independent student research prototype",
+    "disclaimer": "FinGuide is not an official Finnish government service.",
+    "verification": "Always verify important information with the relevant authorities."
   }
 }

@@ -25,9 +25,8 @@
     "nepali": "Nepali"
   },
   "footer": {
-    "description": "Autamme kansainvälisiä asukkaita ymmärtämään Suomen julkisia palveluja.",
-    "quickLinks": "Pikalinkit",
-    "resources": "Tietolähteet",
-    "copyright": "Kaikki oikeudet pidätetään."
+    "subtitle": "Itsenäinen opiskelijan tutkimusprototyyppi",
+    "disclaimer": "FinGuide ei ole Suomen virallinen viranomaispalvelu.",
+    "verification": "Tarkista tärkeät tiedot aina asianomaisilta viranomaisilta."
   }
 }

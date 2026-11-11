@@ -7,6 +7,100 @@
     "askAI": "Kysy FinGuide-tekoälyltä",
     "importantNotice": "Tärkeä huomautus"
   },
+  "immigrations": {
+    "hero": {
+      "back": "Takaisin palveluihin",
+      "badge": "Julkiset palvelut Suomessa",
+      "titleFirst": "Maahanmuutto ja",
+      "titleHighlight": "rekisteröinti",
+      "description1": "Suomeen muuttamiseen liittyy useita tärkeitä vaiheita oleskeluluvan hakemisesta henkilötietojen rekisteröintiin ja digitaalisten julkisten palvelujen käyttämiseen.",
+      "description2": "FinGuide kokoaa yhteen keskeistä tietoa Suomen viranomaisista, jotka vastaavat maahanmuutosta, rekisteröinnistä, henkilöllisyyspalveluista ja digitaalisista viranomaispalveluista.",
+      "serviceCount": "4 keskeistä palvelua",
+      "officialResources": "Viralliset tietolähteet"
+    },
+    "serviceSection": {
+      "badge": "Tutustu palveluihin",
+      "title": "Keskeiset maahanmuutto- ja rekisteröintipalvelut",
+      "description": "Jokaisella viranomaisella on omat vastuualueensa. Tutustu alla oleviin palveluihin selvittääksesi, mikä organisaatio voi auttaa sinua tilanteessasi."
+    },
+    "serviceCards": {
+      "migri": {
+        "category": "Maahanmuutto",
+        "description": "Maahanmuuttovirasto (Migri) käsittelee oleskelulupia, oleskelulupien jatkohakemuksia, kansalaisuushakemuksia ja muita maahanmuuttoon liittyviä asioita.",
+        "question": "Miten voin hakea oleskelulupaa tai jatkaa oleskelulupaani Suomessa?"
+      },
+      "dvv": {
+        "category": "Väestötietojen rekisteröinti",
+        "description": "Digi- ja väestötietovirasto (DVV) vastaa väestötiedoista, kotikunnan rekisteröinnistä ja henkilötiedoista.",
+        "question": "Miten rekisteröin osoitteeni ja kotikuntani Suomessa?"
+      },
+      "suomi": {
+        "category": "Digitaaliset julkiset palvelut",
+        "description": "Suomi.fi auttaa asukkaita löytämään julkisia palveluja, käyttämään sähköiseen tunnistautumiseen liittyviä palveluja ja hallinnoimaan valtuuksia viranomaisasiointia varten.",
+        "question": "Mikä Suomi.fi on ja miten voin käyttää sen digitaalisia palveluja?"
+      },
+      "police": {
+        "category": "Henkilöllisyysasiakirjat ja luvat",
+        "description": "Suomen poliisi tarjoaa henkilökortteihin, passeihin ja tiettyihin muihin lupiin liittyviä palveluja. Hakukelpoisuus ja tarvittavat asiakirjat riippuvat tilanteestasi.",
+        "question": "Miten Suomessa asuva ulkomaalainen voi hakea suomalaista henkilökorttia?"
+      }
+    },
+    "responsibilities": {
+      "badge": "Löydä oikea viranomainen",
+      "title": "Mihin viranomaiseen sinun kannattaa ottaa yhteyttä?",
+      "description": "Eri viranomaiset hoitavat erilaisia rekisteröintiin ja maahanmuuttoon liittyviä asioita. Tässä on lyhyt yleiskatsaus.",
+      "items": {
+        "migri": {
+          "title": "Oleskeluluvat ja maahanmuutto",
+          "description": "Hakemukset, jatkoluvat ja maahanmuuttoon liittyvät päätökset."
+        },
+        "dvv": {
+          "title": "Väestö- ja osoitetietojen rekisteröinti",
+          "description": "Väestötiedot, henkilötiedot ja kotikunta."
+        },
+        "suomi": {
+          "title": "Digitaaliset viranomaispalvelut",
+          "description": "Julkisten palvelujen löytäminen, sähköinen tunnistautuminen ja valtuudet."
+        },
+        "police": {
+          "title": "Henkilökortit ja poliisin luvat",
+          "description": "Henkilökorttihakemukset ja muut poliisin käsittelemät lupa-asiat."
+        }
+      }
+    },
+    "faq": {
+      "badge": "Yleisiä kysymyksiä",
+      "title": "Usein kysytyt kysymykset",
+      "description": "Löydä vastauksia yleisiin kysymyksiin maahanmuutosta ja rekisteröinnistä Suomessa.",
+      "items": {
+        "q1": {
+          "question": "Miten haen oleskelulupaa Suomessa?",
+          "answer": "Oleskelulupahakemukset käsittelee yleensä Maahanmuuttovirasto (Migri). Migrin viralliselta verkkosivustolta löydät tietoa eri lupatyypeistä, vaatimuksista ja hakumenettelyistä."
+        },
+        "q2": {
+          "question": "Mikä on suomalainen henkilötunnus?",
+          "answer": "Suomalainen henkilötunnus on yksilöllinen tunniste, jota käytetään Suomen väestötietojärjestelmässä. Sitä tarvitaan usein viranomaisasioinnissa ja erilaisten palvelujen käyttämisessä."
+        },
+        "q3": {
+          "question": "Miten rekisteröin osoitteeni Suomessa?",
+          "answer": "Osoitteen rekisteröinti riippuu tilanteestasi. Ohjeita löydät DVV:ltä ja virallisesta muuttoilmoituspalvelusta. Osoitteen rekisteröinti ja kotikunnan saaminen liittyvät toisiinsa, mutta ovat eri asioita."
+        },
+        "q4": {
+          "question": "Mikä Suomi.fi on?",
+          "answer": "Suomi.fi on suomalainen julkisten palvelujen verkkopalvelu, joka tarjoaa tietoa viranomaispalveluista sekä tukee sähköistä tunnistautumista ja valtuuksien hallintaa."
+        },
+        "q5": {
+          "question": "Voivatko kansainväliset asukkaat hakea suomalaista henkilökorttia?",
+          "answer": "Osa Suomessa asuvista ulkomaan kansalaisista voi olla oikeutettu poliisin myöntämään henkilökorttiin. Hakukelpoisuus riippuu tietyistä ehdoista, joten tarkista poliisin viralliset ohjeet."
+        }
+      }
+    },
+    "notice": {
+      "title": "Tärkeää tietoa",
+      "description1": "FinGuide on itsenäinen opiskelijan tutkimusprototyyppi, eikä sillä ole virallista yhteyttä Suomen viranomaisiin. Tiedot on tarkoitettu vain yleiseksi opastukseksi.",
+      "description2": "Tarkista aina viralliset vaatimukset, kelpoisuusehdot ja hakumenettelyt suoraan asianomaiselta Suomen viranomaiselta."
+    }
+  },
   "categories": {
     "immigration": {
       "title": "Maahanmuutto ja rekisteröinti",

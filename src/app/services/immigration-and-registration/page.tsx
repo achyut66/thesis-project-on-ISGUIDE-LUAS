@@ -1,116 +1,78 @@
+"use client";
+
 import Link from "next/link";
 
 import {
   ArrowLeft,
   ArrowRight,
   Globe2,
-  IdCard,
-  Landmark,
-  ShieldCheck,
   Info,
   CheckCircle2,
   HelpCircle,
 } from "lucide-react";
 
 import ServiceCard from "../../components/services/ServiceCard";
+import { useLanguage } from "../../context/LanguageContext";
 
 // Immigration and Registration Services
+// Keep official names, links and icons unchanged.
+// Translate category, description and question using JSON.
+
 const immigrationServices = [
   {
+    id: "migri",
     name: "Migri",
-    category: "Immigration",
-    description:
-      "The Finnish Immigration Service handles residence permits, residence permit extensions, citizenship applications, and other immigration-related matters.",
     icon: "Globe2",
     website: "https://migri.fi/en/home",
-    question: "How can I apply for or extend my residence permit in Finland?",
   },
   {
+    id: "dvv",
     name: "DVV",
-    category: "Population Registration",
-    description:
-      "The Digital and Population Data Services Agency manages population information, municipality of residence registration, and personal identity information.",
     icon: "IdCard",
     website: "https://dvv.fi/en/individuals",
-    question:
-      "How do I register my address and municipality of residence in Finland?",
   },
   {
+    id: "suomi",
     name: "Suomi.fi",
-    category: "Digital Public Services",
-    description:
-      "Suomi.fi helps residents find public services, access digital identification services, and manage authorizations for dealing with Finnish authorities.",
     icon: "Landmark",
     website: "https://www.suomi.fi/frontpage",
-    question: "What is Suomi.fi and how can I use its digital services?",
   },
   {
+    id: "police",
     name: "Finnish Police",
-    category: "Identity & Permits",
-    description:
-      "The Finnish Police provides services related to identity cards, passports, and certain other permits. Eligibility and required documents depend on your situation.",
     icon: "ShieldCheck",
     website: "https://poliisi.fi/en/frontpage",
-    question: "How can a foreign resident apply for a Finnish identity card?",
   },
 ];
 
-// Common questions
-const faqs = [
-  {
-    question: "How do I apply for a residence permit in Finland?",
-    answer:
-      "Residence permit applications are generally handled by the Finnish Immigration Service (Migri). You can find information about permit types, requirements, and application procedures on Migri's official website.",
-  },
-  {
-    question: "What is a Finnish personal identity code?",
-    answer:
-      "A Finnish personal identity code is a unique identifier used in Finland's population information system. It is commonly needed when dealing with authorities and accessing various services.",
-  },
-  {
-    question: "How do I register my address in Finland?",
-    answer:
-      "Address registration depends on your circumstances. You can find instructions through DVV and the official moving notification service. Registering an address and obtaining a municipality of residence are related but distinct matters.",
-  },
-  {
-    question: "What is Suomi.fi?",
-    answer:
-      "Suomi.fi is a Finnish public service platform that provides information about government services and supports electronic identification and authorizations.",
-  },
-  {
-    question: "Can international residents apply for a Finnish identity card?",
-    answer:
-      "Some foreign citizens residing in Finland may be eligible for an identity card issued by the Finnish Police. Eligibility depends on specific conditions, so check the official Police instructions.",
-  },
-];
+// FAQ IDs match the JSON keys.
+const faqs = ["q1", "q2", "q3", "q4", "q5"];
 
-// Authority responsibilities
+// Authority IDs match the JSON keys.
 const responsibilities = [
   {
-    title: "Residence permits & immigration",
+    id: "migri",
     authority: "Migri",
-    description: "Applications, extensions, and immigration-related decisions.",
   },
   {
-    title: "Population & address registration",
+    id: "dvv",
     authority: "DVV",
-    description:
-      "Population information, personal identity data, and municipality of residence.",
   },
   {
-    title: "Digital government services",
+    id: "suomi",
     authority: "Suomi.fi",
-    description:
-      "Finding public services, electronic identification, and authorizations.",
   },
   {
-    title: "Identity cards & police permits",
+    id: "police",
     authority: "Finnish Police",
-    description: "Identity card applications and other police-related permits.",
   },
 ];
 
 export default function ImmigrationAndRegistrationPage() {
+  const { t } = useLanguage();
+
+  const translationKey = "services.immigrations";
+
   return (
     <main className="min-h-screen bg-[#f8fafc] text-slate-900">
       {/* ================= HERO SECTION ================= */}
@@ -128,43 +90,46 @@ export default function ImmigrationAndRegistrationPage() {
             className="mb-10 inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-800"
           >
             <ArrowLeft size={17} />
-            Back to Services
+
+            {t(`${translationKey}.hero.back`)}
           </Link>
 
           {/* Category Label */}
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-white px-4 py-2 text-sm font-semibold text-blue-700 shadow-sm">
             <Globe2 size={16} />
-            Public Services in Finland
+
+            {t(`${translationKey}.hero.badge`)}
           </div>
 
           {/* Heading */}
           <h1 className="max-w-4xl text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-            Immigration & <span className="text-blue-600">Registration</span>
+            {t(`${translationKey}.hero.titleFirst`)}{" "}
+            <span className="text-blue-600">
+              {t(`${translationKey}.hero.titleHighlight`)}
+            </span>
           </h1>
 
           {/* Description */}
           <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-600">
-            Moving to Finland involves several important steps, from applying
-            for a residence permit to registering your personal information and
-            accessing digital public services.
+            {t(`${translationKey}.hero.description1`)}
           </p>
 
           <p className="mt-4 max-w-3xl leading-8 text-slate-600">
-            FinGuide brings together essential information about the Finnish
-            authorities responsible for immigration, registration, identity
-            services, and digital government services.
+            {t(`${translationKey}.hero.description2`)}
           </p>
 
           {/* Quick Information */}
           <div className="mt-9 flex flex-wrap gap-4">
             <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-600 shadow-sm">
-              <CheckCircle2 size={17} className="text-teal-600" />4 Essential
-              Services
+              <CheckCircle2 size={17} className="text-teal-600" />
+
+              {t(`${translationKey}.hero.serviceCount`)}
             </span>
 
             <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-600 shadow-sm">
               <CheckCircle2 size={17} className="text-teal-600" />
-              Official Resources
+
+              {t(`${translationKey}.hero.officialResources`)}
             </span>
           </div>
         </div>
@@ -177,25 +142,35 @@ export default function ImmigrationAndRegistrationPage() {
           {/* Section Heading */}
           <div className="mb-12 max-w-3xl">
             <p className="text-sm font-bold uppercase tracking-widest text-blue-600">
-              Explore Services
+              {t(`${translationKey}.serviceSection.badge`)}
             </p>
 
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
-              Essential Immigration & Registration Services
+              {t(`${translationKey}.serviceSection.title`)}
             </h2>
 
             <p className="mt-5 leading-8 text-slate-600">
-              Each authority has different responsibilities. Explore the
-              services below to understand which organization can help with your
-              situation.
+              {t(`${translationKey}.serviceSection.description`)}
             </p>
           </div>
 
           {/* Service Cards */}
           <div className="grid gap-6 sm:grid-cols-2">
-            {immigrationServices.map((service) => (
-              <ServiceCard key={service.name} {...service} />
-            ))}
+            {immigrationServices.map((service) => {
+              const key = `${translationKey}.serviceCards.${service.id}`;
+
+              return (
+                <ServiceCard
+                  key={service.id}
+                  name={service.name}
+                  icon={service.icon}
+                  website={service.website}
+                  category={t(`${key}.category`)}
+                  description={t(`${key}.description`)}
+                  question={t(`${key}.question`)}
+                />
+              );
+            })}
           </div>
         </div>
       </section>
@@ -206,44 +181,51 @@ export default function ImmigrationAndRegistrationPage() {
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="mb-12 max-w-3xl">
             <p className="text-sm font-bold uppercase tracking-widest text-blue-600">
-              Finding the Right Authority
+              {t(`${translationKey}.responsibilities.badge`)}
             </p>
 
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
-              Who should you contact?
+              {t(`${translationKey}.responsibilities.title`)}
             </h2>
 
             <p className="mt-5 leading-8 text-slate-600">
-              Different authorities handle different registration and
-              immigration matters. Here is a quick overview.
+              {t(`${translationKey}.responsibilities.description`)}
             </p>
           </div>
 
+          {/* Authority Cards */}
           <div className="grid gap-5 md:grid-cols-2">
-            {responsibilities.map((item) => (
-              <div
-                key={item.title}
-                className="rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:border-blue-200 hover:shadow-md"
-              >
-                <div className="flex items-start gap-4">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
-                    <CheckCircle2 size={21} />
-                  </span>
+            {responsibilities.map((item) => {
+              const key = `${translationKey}.responsibilities.items.${item.id}`;
 
-                  <div>
-                    <h3 className="text-lg font-bold">{item.title}</h3>
+              return (
+                <div
+                  key={item.id}
+                  className="rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:border-blue-200 hover:shadow-md"
+                >
+                  <div className="flex items-start gap-4">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
+                      <CheckCircle2 size={21} />
+                    </span>
 
-                    <p className="mt-2 text-sm font-semibold text-blue-600">
-                      {item.authority}
-                    </p>
+                    <div>
+                      {/* Translated Title */}
+                      <h3 className="text-lg font-bold">{t(`${key}.title`)}</h3>
 
-                    <p className="mt-3 leading-7 text-slate-600">
-                      {item.description}
-                    </p>
+                      {/* Official Authority Name */}
+                      <p className="mt-2 text-sm font-semibold text-blue-600">
+                        {item.authority}
+                      </p>
+
+                      {/* Translated Description */}
+                      <p className="mt-3 leading-7 text-slate-600">
+                        {t(`${key}.description`)}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -258,39 +240,44 @@ export default function ImmigrationAndRegistrationPage() {
             </span>
 
             <p className="mt-6 text-sm font-bold uppercase tracking-widest text-blue-600">
-              Common Questions
+              {t(`${translationKey}.faq.badge`)}
             </p>
 
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
-              Frequently Asked Questions
+              {t(`${translationKey}.faq.title`)}
             </h2>
 
             <p className="mt-5 leading-8 text-slate-600">
-              Find answers to common questions about immigration and
-              registration in Finland.
+              {t(`${translationKey}.faq.description`)}
             </p>
           </div>
 
           {/* FAQ Accordion */}
           <div className="space-y-4">
-            {faqs.map((faq) => (
-              <details
-                key={faq.question}
-                className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200"
-              >
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-slate-900">
-                  {faq.question}
+            {faqs.map((id) => {
+              const key = `${translationKey}.faq.items.${id}`;
 
-                  <span className="shrink-0 text-blue-600 transition-transform group-open:rotate-90">
-                    <ArrowRight size={19} />
-                  </span>
-                </summary>
+              return (
+                <details
+                  key={id}
+                  className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200"
+                >
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-slate-900">
+                    {/* Translated Question */}
+                    {t(`${key}.question`)}
 
-                <p className="mt-5 border-t border-slate-100 pt-5 leading-7 text-slate-600">
-                  {faq.answer}
-                </p>
-              </details>
-            ))}
+                    <span className="shrink-0 text-blue-600 transition-transform group-open:rotate-90">
+                      <ArrowRight size={19} />
+                    </span>
+                  </summary>
+
+                  {/* Translated Answer */}
+                  <p className="mt-5 border-t border-slate-100 pt-5 leading-7 text-slate-600">
+                    {t(`${key}.answer`)}
+                  </p>
+                </details>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -303,20 +290,18 @@ export default function ImmigrationAndRegistrationPage() {
             <Info size={24} className="mt-1 shrink-0 text-blue-600" />
 
             <div>
+              {/* Notice Title */}
               <h3 className="text-lg font-bold text-slate-900">
-                Important Information
+                {t(`${translationKey}.notice.title`)}
               </h3>
 
+              {/* Notice Description */}
               <p className="mt-3 leading-7 text-slate-600">
-                FinGuide is an independent student research prototype and is not
-                affiliated with Finnish government authorities. Information is
-                provided for general guidance only.
+                {t(`${translationKey}.notice.description1`)}
               </p>
 
               <p className="mt-3 leading-7 text-slate-600">
-                Always verify official requirements, eligibility criteria, and
-                application procedures directly with the relevant Finnish
-                authority.
+                {t(`${translationKey}.notice.description2`)}
               </p>
             </div>
           </div>

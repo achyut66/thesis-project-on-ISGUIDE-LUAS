@@ -7,27 +7,127 @@
     "askAI": "Ask FinGuide AI",
     "importantNotice": "Important Notice"
   },
+
+  "immigrations": {
+    "hero": {
+      "back": "Back to Services",
+      "badge": "Public Services in Finland",
+      "titleFirst": "Immigration &",
+      "titleHighlight": "Registration",
+      "description1": "Moving to Finland involves several important steps, from applying for a residence permit to registering your personal information and accessing digital public services.",
+      "description2": "FinGuide brings together essential information about the Finnish authorities responsible for immigration, registration, identity services, and digital government services.",
+      "serviceCount": "4 Essential Services",
+      "officialResources": "Official Resources"
+    },
+    "serviceSection": {
+      "badge": "Explore Services",
+      "title": "Essential Immigration & Registration Services",
+      "description": "Each authority has different responsibilities. Explore the services below to understand which organization can help with your situation."
+    },
+    "serviceCards": {
+      "migri": {
+        "category": "Immigration",
+        "description": "The Finnish Immigration Service handles residence permits, residence permit extensions, citizenship applications, and other immigration-related matters.",
+        "question": "How can I apply for or extend my residence permit in Finland?"
+      },
+      "dvv": {
+        "category": "Population Registration",
+        "description": "The Digital and Population Data Services Agency manages population information, municipality of residence registration, and personal identity information.",
+        "question": "How do I register my address and municipality of residence in Finland?"
+      },
+      "suomi": {
+        "category": "Digital Public Services",
+        "description": "Suomi.fi helps residents find public services, access digital identification services, and manage authorizations for dealing with Finnish authorities.",
+        "question": "What is Suomi.fi and how can I use its digital services?"
+      },
+      "police": {
+        "category": "Identity & Permits",
+        "description": "The Finnish Police provides services related to identity cards, passports, and certain other permits. Eligibility and required documents depend on your situation.",
+        "question": "How can a foreign resident apply for a Finnish identity card?"
+      }
+    },
+    "responsibilities": {
+      "badge": "Finding the Right Authority",
+      "title": "Who should you contact?",
+      "description": "Different authorities handle different registration and immigration matters. Here is a quick overview.",
+      "items": {
+        "migri": {
+          "title": "Residence permits & immigration",
+          "description": "Applications, extensions, and immigration-related decisions."
+        },
+        "dvv": {
+          "title": "Population & address registration",
+          "description": "Population information, personal identity data, and municipality of residence."
+        },
+        "suomi": {
+          "title": "Digital government services",
+          "description": "Finding public services, electronic identification, and authorizations."
+        },
+        "police": {
+          "title": "Identity cards & police permits",
+          "description": "Identity card applications and other police-related permits."
+        }
+      }
+    },
+    "faq": {
+      "badge": "Common Questions",
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions about immigration and registration in Finland.",
+      "items": {
+        "q1": {
+          "question": "How do I apply for a residence permit in Finland?",
+          "answer": "Residence permit applications are generally handled by the Finnish Immigration Service (Migri). You can find information about permit types, requirements, and application procedures on Migri's official website."
+        },
+        "q2": {
+          "question": "What is a Finnish personal identity code?",
+          "answer": "A Finnish personal identity code is a unique identifier used in Finland's population information system. It is commonly needed when dealing with authorities and accessing various services."
+        },
+        "q3": {
+          "question": "How do I register my address in Finland?",
+          "answer": "Address registration depends on your circumstances. You can find instructions through DVV and the official moving notification service. Registering an address and obtaining a municipality of residence are related but distinct matters."
+        },
+        "q4": {
+          "question": "What is Suomi.fi?",
+          "answer": "Suomi.fi is a Finnish public service platform that provides information about government services and supports electronic identification and authorizations."
+        },
+        "q5": {
+          "question": "Can international residents apply for a Finnish identity card?",
+          "answer": "Some foreign citizens residing in Finland may be eligible for an identity card issued by the Finnish Police. Eligibility depends on specific conditions, so check the official Police instructions."
+        }
+      }
+    },
+    "notice": {
+      "title": "Important Information",
+      "description1": "FinGuide is an independent student research prototype and is not affiliated with Finnish government authorities. Information is provided for general guidance only.",
+      "description2": "Always verify official requirements, eligibility criteria, and application procedures directly with the relevant Finnish authority."
+    }
+  },
+
   "categories": {
     "immigration": {
       "title": "Immigration & Registration",
       "label": "Residence & Identity",
       "description": "Find information about residence permits, population registration, and identification in Finland."
     },
+
     "employment": {
       "title": "Employment & Taxation",
       "label": "Work & Taxes",
       "description": "Understand employment services, job searching, and taxation in Finland."
     },
+
     "healthcare": {
       "title": "Healthcare & Social Security",
       "label": "Health & Benefits",
       "description": "Find information about healthcare services, social security, and available benefits."
     },
+
     "education": {
       "title": "Education & Integration",
       "label": "Study & Integration",
       "description": "Explore education opportunities, Finnish language learning, and integration services."
     },
+
     "housing": {
       "title": "Housing & Everyday Life",
       "label": "Living in Finland",

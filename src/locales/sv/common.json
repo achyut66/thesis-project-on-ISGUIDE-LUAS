@@ -25,9 +25,8 @@
     "nepali": "Nepali"
   },
   "footer": {
-    "description": "Vi hjälper internationella invånare att förstå offentliga tjänster i Finland.",
-    "quickLinks": "Snabblänkar",
-    "resources": "Informationskällor",
-    "copyright": "Alla rättigheter förbehållna."
+    "subtitle": "En självständig forskningsprototyp inom ett studentprojekt",
+    "disclaimer": "FinGuide är inte en officiell tjänst från finländska myndigheter.",
+    "verification": "Kontrollera alltid viktig information hos berörda myndigheter."
   }
 }
